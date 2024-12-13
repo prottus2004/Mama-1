@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Uncle!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x600?text=Happy+Birthday,+Uncle!') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .hero button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .hero button:hover {
+            background-color: #e94e2b;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .guest-wishes {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .guest-wishes form {
+            margin-top: 20px;
+        }
+        .guest-wishes input, .guest-wishes textarea {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .guest-wishes button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .guest-wishes button:hover {
+            background-color: #218838;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Happy Birthday, Uncle!</h1>
+        <p>Wishing you a day filled with laughter, love, and all your favorite things!</p>
+        <button onclick="document.getElementById('wishes').scrollIntoView({behavior: 'smooth'});">View Birthday Wishes</button>
+        <button onclick="document.getElementById('memories').scrollIntoView({behavior: 'smooth'});">View Memories</button>
+    </div>
+
+    <!-- Wishes Section -->
+    <div class="section" id="wishes">
+        <h2>A Special Message for a Special Uncle</h2>
+        <p>
+            Dear Uncle [Name],<br>
+            Today, we celebrate not just your birthday but the incredible person you are. Your wisdom, kindness, and humor light up our lives. May this year bring you endless happiness, health, and joy. Happy Birthday! 🎂
+        </p>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="section gallery" id="memories">
+        <h2>Memories</h2>
+        <img src="https://via.placeholder.com/200" alt="Memory 1">
+        <img src="https://via.placeholder.com/200" alt="Memory 2">
+        <img src="https://via.placeholder.com/200" alt="Memory 3">
+        <img src="https://via.placeholder.com/200" alt="Memory 4">
+    </div>
+
+    <!-- Guest Wishes Section -->
+    <div class="section guest-wishes">
+        <h2>Leave a Wish</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with love by [Your Name]
+    </div>
+</body>
+</html>
